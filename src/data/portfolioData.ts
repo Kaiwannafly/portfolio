@@ -69,7 +69,7 @@ export const PROJECTS: Project[] = [
     summary: "Monorepo hotel reservation and administrative management system built with React, Node.js, TypeScript, and Docker.",
     description: "Designed and engineered an enterprise hotel management monorepo with Nx architecture, real-time room availability matrix, guest booking workflows, and administrative control panels.",
     techStack: ["React", "TypeScript", "Node.js", "Express", "Docker", "Nx Monorepo", "Jest"],
-    repoUrl: "https://github.com/Kaiwannafly/Hotel-Management-System-Monorepo",
+    repoUrl: "https://github.com/Kaiwannafly/Hotel-Management-System",
     highlights: [
       "Built real-time room availability toggle matrices for staff and guest portals",
       "Created booking modules for hotel amenities (Spa, Lounge, Dining, Event rooms)",

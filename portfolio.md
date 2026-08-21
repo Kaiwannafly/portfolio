@@ -23,7 +23,7 @@
 ### 1. Hotel Booking & Management Monorepo
 * **Category**: Full-Stack
 * **Tech Stack**: `React` • `TypeScript` • `Node.js` • `Express` • `Docker` • `Nx Monorepo` • `Jest`
-* **Repository**: [github.com/Kaiwannafly/Hotel-Management-System-Monorepo](https://github.com/Kaiwannafly/Hotel-Management-System-Monorepo)
+* **Repository**: [github.com/Kaiwannafly/Hotel-Management-System](https://github.com/Kaiwannafly/Hotel-Management-System)
 * **Highlights**: Monorepo hotel reservation system with real-time room availability matrix, customer amenities booking, and containerized Docker setup. (UTS Mark: 97 / HD).
 
 ### 2. Car Rental Booking Platform
