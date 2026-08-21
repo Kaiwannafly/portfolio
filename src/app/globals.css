@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-graphite: #202020;
+    --color-canvas-white: #ffffff;
+    --color-ash: #efefef;
+    --color-fog: #f5f5f5;
+    --color-ivory: #ebe6dd;
+    --color-steel: #4d4d4d;
+    --color-slate: #828282;
+    --color-mist: #e8e8e8;
+    --color-ember: #ff682c;
+    --color-brass: #816729;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    color: var(--color-graphite);
+    background-color: var(--color-canvas-white);
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  body {
+    background-color: var(--color-canvas-white);
+    color: var(--color-graphite);
+    font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: rgba(255, 104, 44, 0.18);
+    color: #202020;
+  }
+}
+
+@layer components {
+  /* Ventriloc Primary Sharp Action Button */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 bg-graphite text-canvas-white px-6 py-3 text-sm font-medium tracking-display transition-all duration-150 rounded-button hover:bg-black active:scale-[0.99] disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  /* Ventriloc Ghost Outlined Button */
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 bg-transparent text-graphite border border-graphite/40 px-6 py-3 text-sm font-medium tracking-display transition-all duration-150 rounded-button hover:border-graphite hover:bg-fog active:scale-[0.99] disabled:opacity-50 disabled:pointer-events-none;
+  }
+
+  /* Ventriloc Asymmetric Card */
+  .card-ventriloc {
+    @apply bg-canvas-white border border-mist rounded-card p-6 md:p-8 transition-all duration-200 hover:border-graphite/30 hover:shadow-card;
+  }
+
+  /* Ember Accent Tag */
+  .tag-ember {
+    @apply inline-flex items-center gap-1.5 bg-fog text-graphite text-xs font-mono px-3 py-1 rounded-tag border border-mist/80;
+  }
+
+  /* Pill Navigation Container */
+  .nav-pill-container {
+    @apply inline-flex items-center gap-1 bg-ash/90 backdrop-blur-md border border-mist/80 p-1.5 rounded-pill shadow-subtle;
+  }
+}
+
+/* Subtle editorial scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f5f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4d4d4;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a3a3a3;
+}
