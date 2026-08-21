@@ -119,7 +119,7 @@ export default function Contact() {
                   placeholder="e.g. Alex Johnson"
                   value={formState.name}
                   onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                  className="w-full bg-fog border border-mist px-4 py-2.5 text-sm text-graphite rounded-button focus:outline-none focus:border-graphite transition-colors"
+                  className="w-full bg-fog border border-mist px-4 py-2.5 text-sm text-graphite placeholder:text-slate/70 rounded-button focus:outline-none focus:border-graphite transition-colors"
                 />
               </div>
 
@@ -133,7 +133,7 @@ export default function Contact() {
                   placeholder="alex@example.com"
                   value={formState.email}
                   onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                  className="w-full bg-fog border border-mist px-4 py-2.5 text-sm text-graphite rounded-button focus:outline-none focus:border-graphite transition-colors"
+                  className="w-full bg-fog border border-mist px-4 py-2.5 text-sm text-graphite placeholder:text-slate/70 rounded-button focus:outline-none focus:border-graphite transition-colors"
                 />
               </div>
 
@@ -147,7 +147,7 @@ export default function Contact() {
                   placeholder="Tell me about your project, team, or opportunity..."
                   value={formState.message}
                   onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                  className="w-full bg-fog border border-mist px-4 py-2.5 text-sm text-graphite rounded-button focus:outline-none focus:border-graphite transition-colors resize-none"
+                  className="w-full bg-fog border border-mist px-4 py-2.5 text-sm text-graphite placeholder:text-slate/70 rounded-button focus:outline-none focus:border-graphite transition-colors resize-none"
                 />
               </div>
 

@@ -14,101 +14,59 @@
   * **Email**: [dpnam0911@gmail.com](mailto:dpnam0911@gmail.com)
   * **GitHub**: [github.com/Kaiwannafly](https://github.com/Kaiwannafly)
   * **LinkedIn**: [linkedin.com/in/nam-phuong-dam](https://linkedin.com/in/nam-phuong-dam)
-* **Call to Action (CTA)**:
-  * "View My Projects" (Anchor scroll to Projects)
-  * "Download Resume" (Link to Software Developer Resume PDF)
-  * "Get In Touch" (Anchor scroll to Contact / Mailto)
+  * **Live Portfolio**: [kyledam.vercel.app](https://kyledam.vercel.app)
 
 ---
 
-## 👨‍💻 About Me
+## 💼 Published Projects Showcase & Repositories
 
-I am a motivated Software Engineer and Information Technology graduate from the **University of Technology Sydney (UTS)**, majoring in **Enterprise Systems Development** with a high-distinction academic record (**WAM: 80.54 / GPA: 6.09**).
+### 1. Hotel Booking & Management Monorepo
+* **Category**: Full-Stack
+* **Tech Stack**: `React` • `TypeScript` • `Node.js` • `Express` • `Docker` • `Nx Monorepo` • `Jest`
+* **Repository**: [github.com/Kaiwannafly/Hotel-Management-System-Monorepo](https://github.com/Kaiwannafly/Hotel-Management-System-Monorepo)
+* **Highlights**: Monorepo hotel reservation system with real-time room availability matrix, customer amenities booking, and containerized Docker setup. (UTS Mark: 97 / HD).
 
-With a solid background in full-stack web development (React, Vue.js, Node.js, .NET Core) and computer science fundamentals (Algorithms & Data Structures, Object-Oriented Architecture, System Design), I thrive on building efficient, user-friendly digital applications. My international academic journey across the **United States (Suffolk University - Big Data & CATS Academy Boston)** and **Australia (UTS)** has given me strong adaptability, communication skills, and a global perspective in collaborative tech environments.
+### 2. Car Rental Booking Platform
+* **Category**: Full-Stack
+* **Tech Stack**: `Golang` • `React 19` • `TypeScript` • `Vite` • `REST API` • `Tailwind CSS`
+* **Repository**: [github.com/Kaiwannafly/Car-Rental-Booking-System](https://github.com/Kaiwannafly/Car-Rental-Booking-System)
+* **Highlights**: High-performance Go REST backend paired with React 19 / Vite client for vehicle browsing, real-time price estimation, and reservation management.
 
----
+### 3. Online Grocery Store E-Commerce
+* **Category**: Full-Stack
+* **Tech Stack**: `Node.js` • `Express` • `MongoDB` • `MySQL` • `React 19` • `Material-UI` • `JWT`
+* **Repository**: [github.com/Kaiwannafly/Online-Grocery-Store-MERN](https://github.com/Kaiwannafly/Online-Grocery-Store-MERN)
+* **Highlights**: Full-stack e-commerce store with catalog navigation, cart management, JWT auth, and hybrid MongoDB/MySQL schema support.
 
-## 🛠️ Technical Stack & Skills Matrix
+### 4. Convenience Store POS & Inventory System
+* **Category**: Systems & .NET
+* **Tech Stack**: `C#` • `.NET Framework` • `WPF` • `XAML` • `MVVM` • `SQL Server`
+* **Repository**: [github.com/Kaiwannafly/Convenience-Store-POS-WPF](https://github.com/Kaiwannafly/Convenience-Store-POS-WPF)
+* **Highlights**: Enterprise desktop POS software with MVVM architecture, barcode audio cues, transaction billing, and SQL Server backend. (UTS Mark: 89 / HD).
 
-### 1. Languages & Core
-`JavaScript (ES6+)` • `TypeScript` • `C++` • `Java` • `C# (.NET)` • `SQL` • `HTML5 / CSS3` • `PHP`
+### 5. IoT Bay E-Commerce Platform
+* **Category**: Full-Stack
+* **Tech Stack**: `Java` • `JSP` • `Servlets` • `MVC Architecture` • `MySQL` • `Maven`
+* **Repository**: [github.com/Kaiwannafly/IoTBay-Java-Ecommerce](https://github.com/Kaiwannafly/IoTBay-Java-Ecommerce)
+* **Highlights**: End-to-end e-commerce store dedicated to IoT devices, real-time order tracking, and RBAC authentication. (UTS Mark: 96 / HD).
 
-### 2. Frontend Development
-`React` • `Vue.js` • `Responsive Web Design` • `State Management` • `Component Lifecycle` • `UI/UX Integration`
+### 6. Machine Learning KNN Classifier From Scratch
+* **Category**: AI & Data Science
+* **Tech Stack**: `Python` • `Jupyter Notebook` • `NumPy` • `Pandas` • `Matplotlib`
+* **Repository**: [github.com/Kaiwannafly/Machine-Learning-KNN-From-Scratch](https://github.com/Kaiwannafly/Machine-Learning-KNN-From-Scratch)
+* **Highlights**: First-principles implementation of K-Nearest Neighbors classification algorithm with distance metric benchmarks and analytical research report.
 
-### 3. Backend & APIs
-`Node.js` • `Express.js` • `.NET Core Web API` • `RESTful APIs` • `Microservices Architecture` • `gRPC & WebSockets`
+### 7. Hospital Information & Appointment System
+* **Category**: Systems & .NET
+* **Tech Stack**: `C#` • `.NET` • `Windows Forms` • `OOP Design Patterns`
+* **Repository**: [github.com/Kaiwannafly/Hospital-Management-System-DotNet](https://github.com/Kaiwannafly/Hospital-Management-System-DotNet)
+* **Highlights**: Medical practice management software supporting patient records, doctor scheduling, and appointment conflict validation.
 
-### 4. Databases & Cloud
-`MySQL` • `Relational Database Modeling` • `Query Optimization` • `AWS Cloud Computing` • `Cloud SaaS`
-
-### 5. Tools & Methodologies
-`Git / GitHub` • `VS Code` • `Visual Studio` • `Postman` • `Agile / Scrum` • `CI/CD Fundamentals`
-
----
-
-## 💼 Featured Projects Showcase
-
-### 1. Hotel Booking Management Web Application
-* **Role**: Frontend Developer
-* **Tech Stack**: `React` • `JavaScript` • `CSS3` • `REST API`
-* **Repository**: [github.com/mclarence/Hotel-Management-System.git](https://github.com/mclarence/Hotel-Management-System.git)
-* **Overview**: A dynamic hotel reservation and administrative management system developed with modern React architecture.
-* **Key Features**:
-  * Engineered an interactive dashboard and real-time room availability matrix for staff and guests.
-  * Developed multi-view room reservation management with live customer booking confirmation.
-  * Implemented service scheduling modules for hotel amenities (Spa, Lounge, Dining, Event booking).
-
----
-
-### 2. "IoT Bay" E-Commerce Platform
-* **Role**: Full-Stack Developer
-* **Tech Stack**: `Java` • `JSP` • `MVC Architecture` • `MySQL` • `Bootstrap`
-* **Repository**: [github.com/JasonI136/IoTBay](https://github.com/JasonI136/IoTBay)
-* **Overview**: An end-to-end e-commerce platform specializing in IoT devices and sensor hardware catalog management.
-* **Key Features**:
-  * Built real-time order tracking and dispatch status updates for customer accounts.
-  * Implemented Role-Based Access Control (RBAC) and admin dashboard for user and password management.
-  * Designed scalable relational schema for product catalog, shopping cart, and transaction logs.
-
----
-
-### 3. Hanoi TV (HNTV) Metadata Management Platform
-* **Role**: Full-Stack Intern Developer
+### 8. Hanoi TV (HNTV) Metadata Platform
+* **Category**: Full-Stack
 * **Tech Stack**: `Vue.js` • `Node.js` • `Express` • `SQL`
-* **Repository**: [github.com/Kaiwannafly/HNTV-Management.git](https://github.com/Kaiwannafly/HNTV-Management.git)
-* **Overview**: A digital media asset management system for broadcast television metadata sorting and indexing.
-* **Key Features**:
-  * Built responsive Vue.js frontend for video segmentation, merging, and document archiving.
-  * Engineered backend sorting algorithms to process daily news video clips into consolidated media files.
-
----
-
-### 4. Custom High-Performance Deque Data Structure
-* **Tech Stack**: `C++` • `Templates` • `STL` • `Data Structures`
-* **Overview**: A generic double-ended queue (deque) implemented from scratch utilizing dual dynamic `std::vector` buffers.
-* **Key Features**:
-  * Designed generic template support for `int`, `double`, `char`, `std::string`.
-  * Achieved $O(1)$ constant-time push/pop operations from both ends and indexed access via operator `[]`.
-
----
-
-### 5. Infix-to-Postfix Stack Calculator Engine
-* **Tech Stack**: `C++` • `Shunting Yard Algorithm` • `Stack ADT`
-* **Overview**: An arithmetic expression conversion and calculation engine for complex mathematical expressions.
-* **Key Features**:
-  * Implemented the Dijkstra Shunting Yard Algorithm handling operator precedence and associativity.
-  * Built robust syntax validation and stack-based postfix evaluation.
-
----
-
-### 6. Java GUI & Game Application Suite
-* **Tech Stack**: `Java` • `BlueJ` • `Swing / AWT` • `OOP Principles`
-* **Overview**: Interactive desktop applications showcasing Object-Oriented Design (Polymorphism & Encapsulation).
-* **Key Features**:
-  * Interactive Snake Game console app with full GUI game lifecycle controls (Start, Pause, Reset, Score).
-  * Cinema Ticket Booking Menu system managing theaters, movie schedules, and seat reservations.
+* **Repository**: [github.com/Kaiwannafly/HNTV-Management](https://github.com/Kaiwannafly/HNTV-Management)
+* **Highlights**: Broadcast media asset management system for video segmentation, automated tagging, and document archiving.
 
 ---
 
@@ -119,34 +77,9 @@ With a solid background in full-stack web development (React, Vue.js, Node.js, .
 * **Major**: Enterprise Systems Development
 * **Graduation**: 2025
 * **Academic Standing**: **GPA 6.09 / 7.00** | **WAM 80.54** (Distinction / High Distinction Average)
-* **Key Coursework**:
-  * **Advanced Software Development** (Mark: 97 - High Distinction)
-  * **Introduction to Software Development** (Mark: 96 - High Distinction)
-  * **Data Structures and Algorithms** (Mark: 89 - High Distinction)
-  * **Application Development with .NET** (Mark: 89 - High Distinction)
-  * **Software Architecture** (Mark: 86 - High Distinction)
-  * **Fundamentals of Interaction Design** (Mark: 76 - Distinction)
-  * **Machine Learning** (Coursework completed)
 
 ### Suffolk University — Boston, MA, United States
 * **Program**: Undergraduate Studies in Big Data & Computer Science (1 Year prior to UTS)
-* **Focus**: Data Analytics, Computational Thinking, Big Data Fundamentals
 
 ### CATS Academy Boston — Boston, MA, United States
 * **Credential**: High School Diploma (Graduated June 2018)
-
----
-
-## 🎨 Proposed Portfolio Site Structure
-
-```text
-Portfolio Web App
-├── 1. Navbar (Brand / Logo, Navigation Links, Dark/Light Theme Toggle)
-├── 2. Hero Section (Introduction, Dynamic Typing Roles, Resume CTA, Social Icons)
-├── 3. About Section (Bio, Quick Highlights, Global Background)
-├── 4. Skills Matrix (Interactive categorized chips: Frontend, Backend, Languages, Tools)
-├── 5. Featured Projects (Interactive Cards with Live Previews, Tech Badges & GitHub Links)
-├── 6. Education & Credentials (UTS High Distinction Highlights, Suffolk & CATS Timeline)
-├── 7. Contact Section (Direct Message Form, Email, LinkedIn, GitHub Links)
-└── 8. Footer (Copyright, Back to Top)
-```

@@ -7,7 +7,7 @@ import { ArrowUpRight, Github, Code, CheckCircle2, Sparkles } from 'lucide-react
 export default function Projects() {
   const [filter, setFilter] = useState<string>('All');
 
-  const categories = ['All', 'Frontend', 'Full-Stack', 'Systems & Algorithms'];
+  const categories = ['All', 'Full-Stack', 'Systems & .NET', 'AI & Data Science'];
 
   const filteredProjects =
     filter === 'All'
@@ -27,7 +27,7 @@ export default function Projects() {
             Selected Software Projects
           </h2>
           <p className="text-steel text-sm sm:text-base max-w-xl">
-            A showcase of web applications, enterprise systems, and algorithmic software developed with modern engineering practices.
+            A showcase of full-stack web applications, enterprise .NET systems, and machine learning models developed with modern engineering practices.
           </p>
         </div>
 
@@ -113,7 +113,7 @@ export default function Projects() {
                   className="inline-flex items-center gap-1.5 text-xs font-medium text-graphite hover:text-ember transition-colors"
                 >
                   <Github className="size-3.5" />
-                  <span>View Repository</span>
+                  <span>View on GitHub</span>
                   <ArrowUpRight className="size-3.5" />
                 </a>
               </div>
