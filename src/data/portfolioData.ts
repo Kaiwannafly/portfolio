@@ -1,3 +1,9 @@
+export interface ProjectScreenshot {
+  url: string;
+  title: string;
+  caption: string;
+}
+
 export interface Project {
   id: string;
   title: string;
@@ -8,6 +14,8 @@ export interface Project {
   techStack: string[];
   repoUrl: string;
   demoUrl?: string;
+  docUrl?: string;
+  screenshots?: ProjectScreenshot[];
   highlights: string[];
   metrics?: string;
   featured: boolean;
@@ -138,17 +146,52 @@ export const PROJECTS: Project[] = [
   },
   {
     id: "convenience-store-wpf",
-    title: "Convenience Store POS & Inventory System",
+    title: "Convenience Store POS & Consignment Suite (Assignment 2)",
     category: "Systems & .NET",
-    role: ".NET Software Developer",
-    summary: "C# .NET WPF Point-of-Sale (POS) and inventory control desktop system built with MVVM pattern and SQL Server.",
-    description: "Feature-rich desktop POS software for retail operations featuring barcode scanning sound feedback, product management, staff shifts, transaction billing, and financial reporting.",
-    techStack: ["C#", ".NET Framework", "WPF", "XAML", "MVVM", "SQL Server", "Crystal Reports"],
+    role: "Lead GUI & Systems Developer",
+    summary: "C# .NET Core WPF Point-of-Sale (POS) and warehouse consignment system built with MVVM pattern, Entity Framework Core, and SQL Server.",
+    description: "Enterprise desktop POS and warehouse management suite featuring computer vision barcode scanning (Emgu.CV / ZXing.Net), interactive financial dashboards (LiveCharts), audio cues, automated receipt generation, and multi-tier RBAC.",
+    techStack: [
+      "C# .NET Core",
+      "WPF",
+      "XAML",
+      "MVVM",
+      "Entity Framework Core",
+      "SQL Server (SSMS)",
+      "Emgu.CV",
+      "ZXing.Net",
+      "LiveCharts",
+      "MaterialDesignInXAML",
+      "FluentValidation",
+    ],
     repoUrl: "https://github.com/Kaiwannafly/Convenience-Store-POS-WPF",
+    docUrl: "/docs/ConvenienceStore_Assignment2_Report.pdf",
+    screenshots: [
+      {
+        url: "/projects/convenience-store/pos_checkout.png",
+        title: "Cashier POS & Cart Interface",
+        caption: "Real-time product selection, cart totals, barcode scan feedback, and automated receipt processing.",
+      },
+      {
+        url: "/projects/convenience-store/financial_dashboard.png",
+        title: "Financial Analytics Dashboard",
+        caption: "LiveCharts visualization of sales trends, revenue breakdowns, and daily transaction audits.",
+      },
+      {
+        url: "/projects/convenience-store/warehouse_management.png",
+        title: "Warehouse Consignment Tracking",
+        caption: "Tracking imported packages, supplier manifests, stock expiration dates, and threshold alerts.",
+      },
+      {
+        url: "/projects/convenience-store/system_flowchart.png",
+        title: "System Architecture & ERD",
+        caption: "Complete relational entity diagram and MVVM data flow for bills, consignments, vouchers, and staff.",
+      },
+    ],
     highlights: [
-      "Architected clean MVVM design pattern with decoupled data access layer (DAL)",
-      "Implemented POS checkout interface with audio scanning cues and automated receipt generation",
-      "Engineered inventory monitoring alerts and financial analytics dashboards",
+      "Architected clean MVVM design pattern with custom ViewModels, RelayCommands, and decoupled EF Core data access",
+      "Engineered POS cashier billing with Emgu.CV and ZXing.Net camera-based barcode scanning and auditory feedback cues",
+      "Built dynamic financial intelligence dashboards with LiveCharts and warehouse consignment tracking on SQL Server",
     ],
     metrics: "UTS .NET Application Dev (Mark: 89 / HD)",
     featured: true,
