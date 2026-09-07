@@ -18,19 +18,10 @@ const getGradeBadge = (grade: string) => {
         badgeClass: 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
       };
     case 'Credit':
+    default:
       return {
         label: 'C',
         badgeClass: 'bg-white/10 text-zinc-300 border border-white/20',
-      };
-    case 'Pass':
-      return {
-        label: 'P',
-        badgeClass: 'bg-white/5 text-text-muted border border-white/10',
-      };
-    default:
-      return {
-        label: 'P',
-        badgeClass: 'bg-white/5 text-text-muted border border-white/10',
       };
   }
 };

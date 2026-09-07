@@ -30,6 +30,9 @@ export default function About() {
             <p>
               My academic trajectory spans the United States (studying Big Data &amp; Computer Science at Suffolk University in Boston, MA) and Australia (UTS Sydney). This multicultural education cultivated a versatile engineering mindset, high adaptability to emerging technology stacks, and strong cross-functional communication skills.
             </p>
+            <p>
+              Currently based in <strong className="text-white font-medium">Hanoi, Vietnam</strong>, I am actively seeking full-time Software Engineer, Full-Stack Developer, and Enterprise Systems roles, available for local, hybrid, or remote opportunities.
+            </p>
           </div>
         </div>
 
