@@ -63,7 +63,7 @@ export default function Hero() {
       {/* Scroll Down Indicator */}
       <div className="relative z-10 pt-16 flex items-center justify-between border-t border-dark-border/60 mt-12">
         <div className="flex items-center gap-6 font-mono text-xs text-text-dim uppercase tracking-caps">
-          <span>Sydney, Australia</span>
+          <span>Hanoi, Vietnam</span>
           <span>•</span>
           <span>UTS Enterprise Systems</span>
           <span>•</span>

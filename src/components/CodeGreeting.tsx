@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -74,7 +74,7 @@ export default function CodeGreeting() {
         {/* Personal Narrative in Jason's voice */}
         <div className="space-y-4 text-text-muted text-base sm:text-lg leading-relaxed pt-4 max-w-3xl">
           <p>
-            I&apos;m a Software Engineer and IT Graduate from Sydney, Australia. I know you want to see my projects and technical depth, so I&apos;ll let you know more{' '}
+            I&apos;m a Software Engineer and UTS IT Graduate based in Hanoi, Vietnam. I know you want to see my projects and technical depth, so I&apos;ll let you know more{' '}
             <a
               href="#about"
               className="text-[#2d76c0] underline-on-hover font-medium"

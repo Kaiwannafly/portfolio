@@ -175,7 +175,7 @@ export default function Navbar() {
             </div>
 
             <div className="pt-4 text-xs font-mono text-text-dim space-y-1">
-              <div>Based in Sydney, NSW, Australia</div>
+              <div>Based in Hanoi, Vietnam</div>
               <div>University of Technology Sydney (BIT)</div>
               <div>WAM 80.06 • High Distinction Standing</div>
             </div>

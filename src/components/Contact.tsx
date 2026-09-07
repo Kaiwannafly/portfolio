@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { PERSONAL_INFO } from '@/data/portfolioData';
@@ -46,7 +46,7 @@ export default function Contact() {
           {/* Left Column: Direct Info & Social Channels */}
           <div className="lg:col-span-5 space-y-8">
             <p className="font-sans text-base sm:text-lg text-text-muted leading-relaxed">
-              I am currently based in Sydney and open to full-time Junior/Graduate Software Engineer, Full-Stack Developer, and Systems Engineering roles. Whether you have an open opportunity, an interesting project, or just want to connect, feel free to reach out.
+              I am currently based in Hanoi, Vietnam and open to full-time Software Engineer, Full-Stack Developer, and Systems Engineering roles. Whether you have an open opportunity, an interesting project, or just want to connect, feel free to reach out.
             </p>
 
             <div className="space-y-4">

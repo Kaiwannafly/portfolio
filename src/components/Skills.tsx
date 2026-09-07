@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { SKILL_CATEGORIES } from '@/data/portfolioData';
@@ -9,25 +9,18 @@ import {
   Coffee,
   Layers,
   Database,
-  Layout,
   Atom,
   Component,
   Globe,
   Palette,
-  Smartphone,
-  Sliders,
   Server,
   Cpu,
-  Network,
   Boxes,
-  Key,
   Table,
   Cloud,
   Zap,
   GitBranch,
   Monitor,
-  Send,
-  Kanban,
   LucideIcon,
 } from 'lucide-react';
 
@@ -38,25 +31,18 @@ const iconMap: Record<string, LucideIcon> = {
   Coffee,
   Layers,
   Database,
-  Layout,
   Atom,
   Component,
   Globe,
   Palette,
-  Smartphone,
-  Sliders,
   Server,
   Cpu,
-  Network,
   Boxes,
-  Key,
   Table,
   Cloud,
   Zap,
   GitBranch,
   Monitor,
-  Send,
-  Kanban,
 };
 
 export default function Skills() {

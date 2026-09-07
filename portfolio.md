@@ -9,7 +9,7 @@
 * **Name**: Kyle Dam (Phuong Nam Dam)
 * **Title / Role**: Software Engineer | Full-Stack Developer | IT Graduate
 * **Headline**: Crafting intuitive user interfaces, robust APIs, and scalable enterprise software solutions.
-* **Location**: Sydney, NSW, Australia
+* **Location**: Hanoi, Vietnam
 * **Contact & Links**:
   * **Email**: [dpnam0911@gmail.com](mailto:dpnam0911@gmail.com)
   * **GitHub**: [github.com/Kaiwannafly](https://github.com/Kaiwannafly)
@@ -78,6 +78,23 @@
 * **Graduation / Conferral**: 2021 – 2025 (Conferred 23 July 2025)
 * **Academic Standing**: **GPA 6.00 / 7.00** | **WAM 80.06** (High Distinction Average)
 * **Course Accreditation**: Australian Computer Society (ACS) Professional Level
+
+#### Coursework Record (Marks ≥ 70)
+| Code | Subject Name | Grade / Mark |
+| :--- | :--- | :--- |
+| `41026` | Advanced Software Development | **High Distinction (97)** |
+| `31748` | Programming on the Internet | **High Distinction (96)** |
+| `41025` | Introduction to Software Development | **High Distinction (96)** |
+| `41080` | Theory of Computing Science | **High Distinction (95)** |
+| `31251` | Data Structures and Algorithms | **High Distinction (89)** |
+| `31927` | Application Development with .NET | **High Distinction (89)** |
+| `48433` | Software Architecture | **High Distinction (86)** |
+| `95003` | TD: Sustainability in an Interconnected World | **Distinction (78)** |
+| `31260` | Fundamentals of Interaction Design | **Distinction (76)** |
+| `31265` | Communication for IT Professionals | **Distinction (76)** |
+| `31005` | Machine Learning | **Credit (74)** |
+| `31250` | Introduction to Data Analytics | **Credit (73)** |
+| `41001` | Cloud Computing and Software as a Service | **Credit (70)** |
 
 ### Suffolk University — Boston, MA, United States
 * **Program**: Undergraduate Studies in Big Data & Computer Science (1 Year prior to UTS)

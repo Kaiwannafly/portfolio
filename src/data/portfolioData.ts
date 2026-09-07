@@ -59,8 +59,8 @@ export const PERSONAL_INFO = {
   name: "Kyle Dam",
   fullName: "Phuong Nam Dam (Đàm Phương Nam)",
   role: "Software Engineer & Full-Stack Developer",
-  status: "Available for Software Engineering & Full-Stack Roles",
-  location: "Sydney, NSW, Australia",
+  status: "Available for Software Engineering Roles (Hanoi / Hybrid / Remote)",
+  location: "Hanoi, Vietnam",
   hometown: "Hanoi, Vietnam",
   email: "dpnam0911@gmail.com",
   uniEmail: "Phuong.n.dam@student.uts.edu.au",
@@ -220,15 +220,14 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   {
     title: "Languages",
     skills: [
-      { name: "JavaScript (ES6+)", level: "Advanced", iconName: "FileCode" },
       { name: "TypeScript", level: "Proficient", iconName: "Code2" },
-      { name: "C++", level: "Advanced (DSA)", iconName: "Terminal" },
-      { name: "C# (.NET Core / WPF)", level: "Advanced", iconName: "Layers" },
-      { name: "Python", level: "Proficient (ML & Data)", iconName: "FileCode" },
+      { name: "JavaScript (ES6+)", level: "Advanced", iconName: "FileCode" },
       { name: "Golang (Go)", level: "Proficient (REST APIs)", iconName: "Cpu" },
+      { name: "C# (.NET Core)", level: "Advanced", iconName: "Layers" },
+      { name: "Python", level: "Proficient (ML & Data)", iconName: "Terminal" },
       { name: "Java", level: "Proficient (OOP & Web)", iconName: "Coffee" },
+      { name: "C++", level: "Advanced (DSA)", iconName: "Terminal" },
       { name: "SQL", level: "Advanced", iconName: "Database" },
-      { name: "HTML5 / CSS3", level: "Advanced", iconName: "Layout" },
     ],
   },
   {
@@ -238,18 +237,15 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
       { name: "Next.js 14", level: "Proficient", iconName: "Globe" },
       { name: "Vue.js", level: "Proficient", iconName: "Component" },
       { name: "Tailwind CSS", level: "Advanced", iconName: "Palette" },
-      { name: "Material-UI (MUI)", level: "Proficient", iconName: "Layout" },
-      { name: "WPF & XAML", level: "Advanced", iconName: "Monitor" },
+      { name: "WPF (XAML)", level: "Advanced", iconName: "Monitor" },
     ],
   },
   {
-    title: "Backend & APIs",
+    title: "Backend & Systems",
     skills: [
       { name: "Node.js & Express", level: "Advanced", iconName: "Server" },
-      { name: ".NET Web API", level: "Proficient", iconName: "Cpu" },
-      { name: "Go REST API", level: "Proficient", iconName: "Zap" },
-      { name: "RESTful API Design", level: "Advanced", iconName: "Network" },
-      { name: "Authentication / JWT", level: "Advanced", iconName: "Key" },
+      { name: "Go REST APIs", level: "Proficient", iconName: "Zap" },
+      { name: "ASP.NET Core Web API", level: "Proficient", iconName: "Cpu" },
       { name: "Docker", level: "Proficient", iconName: "Boxes" },
     ],
   },
@@ -257,20 +253,17 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: "Databases & Cloud",
     skills: [
       { name: "MySQL", level: "Advanced", iconName: "Database" },
-      { name: "MongoDB & Mongoose", level: "Proficient", iconName: "Database" },
+      { name: "MongoDB", level: "Proficient", iconName: "Database" },
       { name: "SQL Server", level: "Proficient", iconName: "Table" },
-      { name: "Schema Modeling", level: "Advanced", iconName: "Table" },
-      { name: "AWS Cloud (SaaS)", level: "Foundational", iconName: "Cloud" },
+      { name: "AWS Cloud", level: "Foundational", iconName: "Cloud" },
     ],
   },
   {
-    title: "Tools & Workflow",
+    title: "Tools & Architecture",
     skills: [
       { name: "Git & GitHub", level: "Advanced", iconName: "GitBranch" },
-      { name: "VS Code & Visual Studio", level: "Advanced", iconName: "Monitor" },
-      { name: "Postman", level: "Advanced", iconName: "Send" },
-      { name: "Vite & Webpack", level: "Proficient", iconName: "Zap" },
-      { name: "Agile / Scrum", level: "Practitioner", iconName: "Kanban" },
+      { name: "Vite", level: "Proficient", iconName: "Zap" },
+      { name: "Nx Monorepo", level: "Proficient", iconName: "Boxes" },
     ],
   },
 ];
@@ -301,9 +294,6 @@ export const EDUCATION_DATA: EducationItem[] = [
       { code: "31005", name: "Machine Learning", mark: 74, grade: "Credit" },
       { code: "31250", name: "Introduction to Data Analytics", mark: 73, grade: "Credit" },
       { code: "41001", name: "Cloud Computing and Software as a Service", mark: 70, grade: "Credit" },
-      { code: "35010", name: "Foundation Mathematics", mark: 69, grade: "Credit" },
-      { code: "37181", name: "Discrete Mathematics", mark: 65, grade: "Credit" },
-      { code: "31272", name: "Project Management and the Professional", mark: 52, grade: "Pass" },
     ],
   },
   {
@@ -327,7 +317,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     period: "25~",
     role: "Software Engineer / Graduate Developer",
     organization: "Available Immediately (Full-Time)",
-    location: "Sydney, NSW, Australia",
+    location: "Hanoi, Vietnam",
     current: true,
     type: "career",
   },
@@ -402,6 +392,6 @@ export const CAPABILITIES_DATA: CapabilityItem[] = [
 
 export const TICKER_TEXTS = {
   line1: "Every great journey begins with a single line of code 💻  •  Scalable Architecture  •  High Distinction Engineering  •  Full-Stack Innovation  •  ",
-  line2: "UTS Graduate  •  WAM 80.06  •  Sydney, Australia → React 19  •  Golang  •  .NET Core  •  Node.js  •  TypeScript  •  Python  •  ",
+  line2: "UTS Graduate  •  WAM 80.06  •  Hanoi, Vietnam → React 19  •  Golang  •  .NET Core  •  Node.js  •  TypeScript  •  Python  •  ",
 };
 
