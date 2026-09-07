@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { PERSONAL_INFO } from '@/data/portfolioData';
@@ -56,7 +56,7 @@ export default function Hero() {
         </h1>
 
         <p className="font-sans text-base sm:text-lg text-text-muted max-w-2xl leading-relaxed pt-2">
-          Information Technology graduate from the <strong className="text-white font-medium">University of Technology Sydney (UTS)</strong> with a High Distinction academic record (WAM 80.54 / GPA 6.09). Architecting scalable web applications, high-concurrency Go services, and enterprise .NET systems.
+          Information Technology graduate from the <strong className="text-white font-medium">University of Technology Sydney (UTS)</strong> with a High Distinction academic record (WAM 80.06 / GPA 6.00). Architecting scalable web applications, high-concurrency Go services, and enterprise .NET systems.
         </p>
       </div>
 

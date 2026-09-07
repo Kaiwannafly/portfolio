@@ -17,7 +17,7 @@ export interface Coursework {
   code: string;
   name: string;
   mark: number;
-  grade: "High Distinction" | "Distinction" | "Credit";
+  grade: "High Distinction" | "Distinction" | "Credit" | "Pass";
 }
 
 export interface EducationItem {
@@ -68,9 +68,9 @@ export const PERSONAL_INFO = {
   github: "https://github.com/Kaiwannafly",
   linkedin: "https://linkedin.com/in/nam-phuong-dam",
   resumePath: "/Kyle_Dam_Resume.pdf",
-  bio: "Motivated Software Engineer and Information Technology graduate from the University of Technology Sydney (UTS) with a High Distinction academic record (WAM 80.54 / GPA 6.09). Experienced in building scalable full-stack applications with React, Vue.js, Node.js, Go, and .NET Core.",
+  bio: "Motivated Software Engineer and Information Technology graduate from the University of Technology Sydney (UTS) with a High Distinction academic record (WAM 80.06 / GPA 6.00). Experienced in building scalable full-stack applications with React, Vue.js, Node.js, Go, and .NET Core.",
   stats: [
-    { label: "Academic Average", value: "80.54 WAM", detail: "High Distinction / Distinction" },
+    { label: "Academic Average", value: "80.06 WAM", detail: "High Distinction / Distinction" },
     { label: "Completed Projects", value: "8+", detail: "Web, Enterprise & Machine Learning" },
     { label: "Core Technologies", value: "12+", detail: "React, Node, Go, .NET, Python, Java" },
     { label: "Global Experience", value: "USA & AU", detail: "Boston, MA & Sydney, NSW" },
@@ -279,24 +279,31 @@ export const EDUCATION_DATA: EducationItem[] = [
   {
     institution: "University of Technology Sydney (UTS)",
     location: "Sydney, NSW, Australia",
-    degree: "Bachelor of Information Technology",
+    degree: "Bachelor of Information Technology with Credit (BIT)",
     major: "Enterprise Systems Development",
-    period: "2021 – 2025",
-    gpa: "6.09 / 7.00",
-    wam: "80.54",
-    honors: "High Distinction / Distinction Honor Standing",
-    description: "Specialized in large-scale enterprise software architecture, advanced algorithm design, and cloud systems engineering.",
+    period: "2021 – 2025 (Conferred July 2025)",
+    gpa: "6.00 / 7.00",
+    wam: "80.06",
+    honors: "Bachelor of IT with Credit • High Distinction Average (WAM 80.06)",
+    description:
+      "Specialized in large-scale enterprise software architecture, cloud systems engineering, and advanced computing. Accredited at Professional Level by the Australian Computer Society (ACS).",
     coursework: [
       { code: "41026", name: "Advanced Software Development", mark: 97, grade: "High Distinction" },
+      { code: "31748", name: "Programming on the Internet", mark: 96, grade: "High Distinction" },
       { code: "41025", name: "Introduction to Software Development", mark: 96, grade: "High Distinction" },
+      { code: "41080", name: "Theory of Computing Science", mark: 95, grade: "High Distinction" },
       { code: "31251", name: "Data Structures and Algorithms", mark: 89, grade: "High Distinction" },
       { code: "31927", name: "Application Development with .NET", mark: 89, grade: "High Distinction" },
       { code: "48433", name: "Software Architecture", mark: 86, grade: "High Distinction" },
+      { code: "95003", name: "TD: Sustainability in an Interconnected World", mark: 78, grade: "Distinction" },
       { code: "31260", name: "Fundamentals of Interaction Design", mark: 76, grade: "Distinction" },
       { code: "31265", name: "Communication for IT Professionals", mark: 76, grade: "Distinction" },
+      { code: "31005", name: "Machine Learning", mark: 74, grade: "Credit" },
       { code: "31250", name: "Introduction to Data Analytics", mark: 73, grade: "Credit" },
-      { code: "41001", name: "Cloud Computing & SaaS", mark: 70, grade: "Credit" },
-      { code: "31005", name: "Machine Learning", mark: 80, grade: "Distinction" },
+      { code: "41001", name: "Cloud Computing and Software as a Service", mark: 70, grade: "Credit" },
+      { code: "35010", name: "Foundation Mathematics", mark: 69, grade: "Credit" },
+      { code: "37181", name: "Discrete Mathematics", mark: 65, grade: "Credit" },
+      { code: "31272", name: "Project Management and the Professional", mark: 52, grade: "Pass" },
     ],
   },
   {
@@ -334,7 +341,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
   },
   {
     period: "21-25",
-    role: "Bachelor of Information Technology (WAM 80.54)",
+    role: "Bachelor of Information Technology with Credit (WAM 80.06)",
     organization: "University of Technology Sydney (UTS)",
     location: "Sydney, NSW, Australia",
     current: false,
@@ -389,12 +396,12 @@ export const CAPABILITIES_DATA: CapabilityItem[] = [
     title: "Algorithms, Clean Architecture & Delivery",
     subtitle: "Engineering With Academic Rigor",
     description:
-      "Backed by a High Distinction record at UTS (WAM 80.54) in Advanced Software Dev (97) and Data Structures & Algorithms (89). I practice test-driven mindset, Git CI/CD discipline, first-principles algorithm analysis, and clear team communication.",
+      "Backed by a High Distinction record at UTS (WAM 80.06) in Advanced Software Dev (97) and Data Structures & Algorithms (89). I practice test-driven mindset, Git CI/CD discipline, first-principles algorithm analysis, and clear team communication.",
   },
 ];
 
 export const TICKER_TEXTS = {
   line1: "Every great journey begins with a single line of code 💻  •  Scalable Architecture  •  High Distinction Engineering  •  Full-Stack Innovation  •  ",
-  line2: "UTS Graduate  •  WAM 80.54  •  Sydney, Australia → React 19  •  Golang  •  .NET Core  •  Node.js  •  TypeScript  •  Python  •  ",
+  line2: "UTS Graduate  •  WAM 80.06  •  Sydney, Australia → React 19  •  Golang  •  .NET Core  •  Node.js  •  TypeScript  •  Python  •  ",
 };
 

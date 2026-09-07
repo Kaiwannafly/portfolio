@@ -73,10 +73,11 @@
 ## 🎓 Education & Academic Honors
 
 ### University of Technology Sydney (UTS) — Sydney, NSW, Australia
-* **Degree**: Bachelor of Information Technology (`C10148`)
+* **Degree**: Bachelor of Information Technology with Credit (BIT, `C10148`)
 * **Major**: Enterprise Systems Development
-* **Graduation**: 2025
-* **Academic Standing**: **GPA 6.09 / 7.00** | **WAM 80.54** (Distinction / High Distinction Average)
+* **Graduation / Conferral**: 2021 – 2025 (Conferred 23 July 2025)
+* **Academic Standing**: **GPA 6.00 / 7.00** | **WAM 80.06** (High Distinction Average)
+* **Course Accreditation**: Australian Computer Society (ACS) Professional Level
 
 ### Suffolk University — Boston, MA, United States
 * **Program**: Undergraduate Studies in Big Data & Computer Science (1 Year prior to UTS)

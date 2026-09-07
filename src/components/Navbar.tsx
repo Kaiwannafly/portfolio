@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -177,7 +177,7 @@ export default function Navbar() {
             <div className="pt-4 text-xs font-mono text-text-dim space-y-1">
               <div>Based in Sydney, NSW, Australia</div>
               <div>University of Technology Sydney (BIT)</div>
-              <div>WAM 80.54 • High Distinction Standing</div>
+              <div>WAM 80.06 • High Distinction Standing</div>
             </div>
           </div>
         </div>

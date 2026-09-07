@@ -1,8 +1,39 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { EDUCATION_DATA } from '@/data/portfolioData';
 import { GraduationCap, Award, MapPin, Calendar, CheckCircle2 } from 'lucide-react';
+
+// Helper function for coursework grade badges
+const getGradeBadge = (grade: string) => {
+  switch (grade) {
+    case 'High Distinction':
+      return {
+        label: 'HD',
+        badgeClass: 'bg-accent-blue/20 text-accent-sky border border-accent-blue/40',
+      };
+    case 'Distinction':
+      return {
+        label: 'D',
+        badgeClass: 'bg-purple-500/20 text-purple-300 border border-purple-500/30',
+      };
+    case 'Credit':
+      return {
+        label: 'C',
+        badgeClass: 'bg-white/10 text-zinc-300 border border-white/20',
+      };
+    case 'Pass':
+      return {
+        label: 'P',
+        badgeClass: 'bg-white/5 text-text-muted border border-white/10',
+      };
+    default:
+      return {
+        label: 'P',
+        badgeClass: 'bg-white/5 text-text-muted border border-white/10',
+      };
+  }
+};
 
 export default function Education() {
   return (
@@ -38,6 +69,18 @@ export default function Education() {
                     <p className="text-sm font-medium text-text-muted">
                       {item.degree} {item.major ? `• Major in ${item.major}` : ''}
                     </p>
+                    {item.wam && (
+                      <div className="flex flex-wrap items-center gap-2 pt-2">
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-mono font-medium bg-emerald-500/15 text-emerald-300 border border-emerald-500/30">
+                          <CheckCircle2 className="size-3 text-emerald-400" />
+                          ACS Accredited
+                        </span>
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-xs font-mono font-medium bg-amber-400/15 text-amber-300 border border-amber-400/30">
+                          <Award className="size-3 text-amber-400" />
+                          Conferred with Credit
+                        </span>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -83,9 +126,10 @@ export default function Education() {
                     Faculty Standing
                   </span>
                   <span className="font-display text-base font-semibold text-amber-300 flex items-center gap-1.5 mt-1">
-                    <Award className="size-4 text-amber-400" />
+                    <Award className="size-4 text-amber-400 shrink-0" />
                     {item.honors}
                   </span>
+                  <span className="text-xs text-text-muted block mt-0.5">ACS Professional Level Accreditation</span>
                 </div>
               </div>
             )}
@@ -94,37 +138,36 @@ export default function Education() {
               {item.description}
             </p>
 
-            {/* Coursework High Distinction Badges */}
+            {/* Coursework Badges */}
             {item.coursework && (
               <div className="space-y-3 pt-2">
                 <h4 className="font-mono text-xs uppercase tracking-caps text-text-dim font-medium">
                   Coursework Performance
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {item.coursework.map((course) => (
-                    <div
-                      key={course.code}
-                      className="p-3 rounded-xl bg-dark-surface/90 border border-dark-border/80 flex items-center justify-between text-xs"
-                    >
-                      <div className="space-y-0.5 pr-2">
-                        <span className="font-mono text-[10px] text-accent-sky block">
-                          {course.code}
-                        </span>
-                        <span className="font-medium text-white/90 leading-tight block">
-                          {course.name}
+                  {item.coursework.map((course) => {
+                    const badge = getGradeBadge(course.grade);
+                    return (
+                      <div
+                        key={course.code}
+                        className="p-3 rounded-xl bg-dark-surface/90 border border-dark-border/80 flex items-center justify-between text-xs"
+                      >
+                        <div className="space-y-0.5 pr-2">
+                          <span className="font-mono text-[10px] text-accent-sky block">
+                            {course.code}
+                          </span>
+                          <span className="font-medium text-white/90 leading-tight block">
+                            {course.name}
+                          </span>
+                        </div>
+                        <span
+                          className={`font-mono font-bold px-2.5 py-1 rounded-md text-xs shrink-0 ${badge.badgeClass}`}
+                        >
+                          {course.mark} / {badge.label}
                         </span>
                       </div>
-                      <span
-                        className={`font-mono font-bold px-2.5 py-1 rounded-md text-xs shrink-0 ${
-                          course.mark >= 85
-                            ? 'bg-accent-blue/30 text-accent-sky border border-accent-blue/40'
-                            : 'bg-white/10 text-white border border-white/15'
-                        }`}
-                      >
-                        {course.mark} / {course.grade.includes('High') ? 'HD' : 'D'}
-                      </span>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             )}

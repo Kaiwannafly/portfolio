@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React from 'react';
 import { PERSONAL_INFO } from '@/data/portfolioData';
@@ -25,7 +25,7 @@ export default function About() {
               <strong className="text-white font-medium">Enterprise Systems Development</strong>.
             </p>
             <p>
-              Across my degree, I maintained a <strong className="text-white font-medium">WAM of 80.54 (GPA 6.09 / 7.00)</strong>, earning High Distinctions in Advanced Software Development (97), Introduction to Software Development (96), Data Structures &amp; Algorithms (89), .NET Application Development (89), and Software Architecture (86).
+              Across my degree, I maintained a <strong className="text-white font-medium">WAM of 80.06 (GPA 6.00 / 7.00)</strong>, earning 7 High Distinctions including Advanced Software Development (97), Programming on the Internet (96), Introduction to Software Development (96), Theory of Computing Science (95), Data Structures &amp; Algorithms (89), .NET Application Development (89), and Software Architecture (86).
             </p>
             <p>
               My academic trajectory spans the United States (studying Big Data &amp; Computer Science at Suffolk University in Boston, MA) and Australia (UTS Sydney). This multicultural education cultivated a versatile engineering mindset, high adaptability to emerging technology stacks, and strong cross-functional communication skills.
