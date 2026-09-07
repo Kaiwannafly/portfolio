@@ -142,10 +142,12 @@ export default function Education() {
             {item.coursework && (
               <div className="space-y-3 pt-2">
                 <h4 className="font-mono text-xs uppercase tracking-caps text-text-dim font-medium">
-                  Coursework Performance
+                  Coursework Performance (Marks &ge; 70)
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
-                  {item.coursework.map((course) => {
+                  {item.coursework
+                    .filter((course) => course.mark >= 70)
+                    .map((course) => {
                     const badge = getGradeBadge(course.grade);
                     return (
                       <div

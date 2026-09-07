@@ -253,6 +253,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: "Databases & Cloud",
     skills: [
       { name: "MySQL", level: "Advanced", iconName: "Database" },
+      { name: "PostgreSQL", level: "Proficient", iconName: "Database" },
       { name: "MongoDB", level: "Proficient", iconName: "Database" },
       { name: "SQL Server", level: "Proficient", iconName: "Table" },
       { name: "AWS Cloud", level: "Foundational", iconName: "Cloud" },
@@ -268,10 +269,12 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
   },
 ];
 
+export const SKILLS_DATA = SKILL_CATEGORIES;
+
 export const EDUCATION_DATA: EducationItem[] = [
   {
     institution: "University of Technology Sydney (UTS)",
-    location: "Sydney, NSW, Australia",
+    location: "Hanoi, Vietnam",
     degree: "Bachelor of Information Technology with Credit (BIT)",
     major: "Enterprise Systems Development",
     period: "2021 – 2025 (Conferred July 2025)",

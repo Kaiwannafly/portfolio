@@ -72,7 +72,7 @@
 
 ## 🎓 Education & Academic Honors
 
-### University of Technology Sydney (UTS) — Sydney, NSW, Australia
+### University of Technology Sydney (UTS) — Hanoi, Vietnam (UTS Sydney Alum)
 * **Degree**: Bachelor of Information Technology with Credit (BIT, `C10148`)
 * **Major**: Enterprise Systems Development
 * **Graduation / Conferral**: 2021 – 2025 (Conferred 23 July 2025)

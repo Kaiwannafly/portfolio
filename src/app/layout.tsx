@@ -36,7 +36,8 @@ export const metadata: Metadata = {
     "React",
     "TypeScript",
     "Node.js",
-    "Sydney Developer",
+    "Hanoi Developer",
+    "Vietnam Software Engineer",
   ],
   authors: [{ name: "Kyle Dam", url: "https://github.com/Kaiwannafly" }],
   openGraph: {
