@@ -38,6 +38,23 @@ export interface SkillCategory {
   skills: { name: string; level: string; iconName: string }[];
 }
 
+export interface TimelineItem {
+  period: string;
+  role: string;
+  organization: string;
+  location: string;
+  current: boolean;
+  type: "career" | "education";
+}
+
+export interface CapabilityItem {
+  id: string;
+  icon: string;
+  title: string;
+  subtitle: string;
+  description: string;
+}
+
 export const PERSONAL_INFO = {
   name: "Kyle Dam",
   fullName: "Phuong Nam Dam (Đàm Phương Nam)",
@@ -297,3 +314,87 @@ export const EDUCATION_DATA: EducationItem[] = [
     description: "American high school education with emphasis on mathematics, sciences, and foundational computer programming.",
   },
 ];
+
+export const TIMELINE_DATA: TimelineItem[] = [
+  {
+    period: "25~",
+    role: "Software Engineer / Graduate Developer",
+    organization: "Available Immediately (Full-Time)",
+    location: "Sydney, NSW, Australia",
+    current: true,
+    type: "career",
+  },
+  {
+    period: "2024",
+    role: "Software Developer & Media Intern",
+    organization: "Hanoi Radio Television (HNTV)",
+    location: "Hanoi, Vietnam",
+    current: false,
+    type: "career",
+  },
+  {
+    period: "21-25",
+    role: "Bachelor of Information Technology (WAM 80.54)",
+    organization: "University of Technology Sydney (UTS)",
+    location: "Sydney, NSW, Australia",
+    current: false,
+    type: "education",
+  },
+  {
+    period: "18-19",
+    role: "Undergraduate Studies in Big Data & CS",
+    organization: "Suffolk University",
+    location: "Boston, MA, United States",
+    current: false,
+    type: "education",
+  },
+  {
+    period: "2018",
+    role: "High School Diploma",
+    organization: "CATS Academy Boston",
+    location: "Boston, MA, United States",
+    current: false,
+    type: "education",
+  },
+];
+
+export const CAPABILITIES_DATA: CapabilityItem[] = [
+  {
+    id: "app-dev",
+    icon: "💻",
+    title: "Application & Enterprise Development",
+    subtitle: "Turning Complex Ideas Into Scalable Reality",
+    description:
+      "I love architecting systems that solve real-world problems. From containerized microservices to enterprise desktop software, I combine tested software patterns (MVVM, MVC, DataFactory) with high-efficiency languages like Go, C# (.NET Core), Java, and TypeScript.",
+  },
+  {
+    id: "frontend-dev",
+    icon: "🎨",
+    title: "Frontend Engineering & Design Systems",
+    subtitle: "Crafting UI That Users Love",
+    description:
+      "Frontend engineering is where design precision meets technical execution. I build responsive, accessible web interfaces in React 19, Next.js 14, and Vite with Tailwind CSS, ensuring smooth 60fps micro-interactions, dark mode aesthetics, and zero layout shift.",
+  },
+  {
+    id: "backend-systems",
+    icon: "⚙️",
+    title: "System Integration & API Engineering",
+    subtitle: "Making Distributed Services Play Together",
+    description:
+      "Stitching together microservices, relational databases, and third-party APIs with sub-50ms latencies. Proficient in Go REST APIs, .NET Core Web APIs, Node.js/Express, JWT role-based access control, and hybrid database schemas (MySQL, PostgreSQL, MongoDB, SQL Server).",
+  },
+  {
+    id: "engineering-discipline",
+    icon: "🤝",
+    title: "Algorithms, Clean Architecture & Delivery",
+    subtitle: "Engineering With Academic Rigor",
+    description:
+      "Backed by a High Distinction record at UTS (WAM 80.54) in Advanced Software Dev (97) and Data Structures & Algorithms (89). I practice test-driven mindset, Git CI/CD discipline, first-principles algorithm analysis, and clear team communication.",
+  },
+];
+
+export const TICKER_TEXTS = {
+  line1: "Every great journey begins with a single line of code 💻  •  Scalable Architecture  •  High Distinction Engineering  •  Full-Stack Innovation  •  ",
+  line2: "UTS Graduate  •  WAM 80.54  •  Sydney, Australia → React 19  •  Golang  •  .NET Core  •  Node.js  •  TypeScript  •  Python  •  ",
+};
+

@@ -1,23 +1,26 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk, JetBrains_Mono } from "next/font/google";
+import { Syne, Poppins, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const syne = Syne({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-syne",
   display: "swap",
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const spaceGrotesk = Space_Grotesk({
+const poppins = Poppins({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-poppins",
   display: "swap",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-jetbrains-mono",
   display: "swap",
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
@@ -54,9 +57,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${spaceGrotesk.variable} ${jetbrainsMono.variable} scroll-smooth`}
+      className={`${syne.variable} ${poppins.variable} ${jetbrainsMono.variable} scroll-smooth`}
     >
-      <body className="min-h-screen flex flex-col bg-canvas-white text-graphite antialiased selection:bg-ember selection:text-white">
+      <body className="min-h-screen flex flex-col bg-dark text-white font-sans antialiased selection:bg-accent-blue selection:text-white relative overflow-x-hidden">
         {children}
       </body>
     </html>

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState } from 'react';
 import { SKILL_CATEGORIES } from '@/data/portfolioData';
@@ -60,65 +60,80 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 export default function Skills() {
-  const [activeCategory, setActiveCategory] = useState<string>(SKILL_CATEGORIES[0].title);
+  const [activeCategory, setActiveCategory] = useState<string>('All');
+
+  const allSkills = SKILL_CATEGORIES.flatMap((c) => c.skills);
+  const displaySkills =
+    activeCategory === 'All'
+      ? allSkills
+      : SKILL_CATEGORIES.find((c) => c.title === activeCategory)?.skills || [];
 
   return (
-    <section id="skills" className="py-20 px-6 max-w-6xl mx-auto border-t border-mist">
+    <section id="skills" className="py-24 px-6 sm:px-12 max-w-7xl mx-auto border-t border-dark-border">
       {/* Section Header */}
-      <div className="space-y-3 mb-10">
-        <div className="inline-flex items-center gap-2 text-xs font-mono text-slate uppercase tracking-caps">
-          <span className="size-1.5 rounded-full bg-ember"></span>
-          Technical Capabilities
-        </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-normal text-graphite tracking-display">
-          Skills &amp; Technology Stack
+      <div className="text-center space-y-4 mb-16">
+        <h2 className="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white hover:text-stroke-light transition-all duration-300">
+          Technical Skills
         </h2>
-        <p className="text-steel text-sm sm:text-base max-w-xl">
-          Core programming languages, frameworks, architectural patterns, and development tools I work with.
+        <p className="font-mono text-xs sm:text-sm uppercase tracking-caps text-text-muted">
+          My Engineering Toolbox
         </p>
-      </div>
 
-      {/* Categories Tabs */}
-      <div className="flex flex-wrap gap-2 mb-8">
-        {SKILL_CATEGORIES.map((cat) => (
+        {/* Category Tabs */}
+        <div className="flex flex-wrap items-center justify-center gap-2 pt-6">
           <button
-            key={cat.title}
-            onClick={() => setActiveCategory(cat.title)}
-            className={`px-4 py-2 text-xs font-medium rounded-pill transition-all ${
-              activeCategory === cat.title
-                ? 'bg-graphite text-canvas-white shadow-subtle'
-                : 'bg-fog text-steel hover:text-graphite hover:bg-ash'
+            onClick={() => setActiveCategory('All')}
+            className={`px-4 py-2 rounded-full font-display text-xs tracking-wider uppercase transition-all duration-300 ${
+              activeCategory === 'All'
+                ? 'bg-white text-dark font-semibold shadow-lg'
+                : 'bg-dark-card border border-dark-border text-text-muted hover:border-white/30 hover:text-white'
             }`}
+            data-cursor="Toolbox"
           >
-            {cat.title}
+            All Skills
           </button>
-        ))}
+          {SKILL_CATEGORIES.map((cat) => (
+            <button
+              key={cat.title}
+              onClick={() => setActiveCategory(cat.title)}
+              className={`px-4 py-2 rounded-full font-display text-xs tracking-wider uppercase transition-all duration-300 ${
+                activeCategory === cat.title
+                  ? 'bg-white text-dark font-semibold shadow-lg'
+                  : 'bg-dark-card border border-dark-border text-text-muted hover:border-white/30 hover:text-white'
+              }`}
+              data-cursor="Filter"
+            >
+              {cat.title}
+            </button>
+          ))}
+        </div>
       </div>
 
-      {/* Active Category Skills Grid */}
-      {SKILL_CATEGORIES.filter((c) => c.title === activeCategory).map((cat) => (
-        <div key={cat.title} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {cat.skills.map((skill) => {
-            const Icon = iconMap[skill.iconName] || Code2;
-            return (
-              <div
-                key={skill.name}
-                className="bg-canvas-white border border-mist rounded-card p-4 flex items-center justify-between transition-all hover:border-graphite/30 hover:shadow-subtle"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="size-9 rounded-md bg-fog flex items-center justify-center text-graphite border border-mist/80">
-                    <Icon className="size-4 text-graphite" />
-                  </div>
-                  <div>
-                    <h4 className="text-sm font-medium text-graphite">{skill.name}</h4>
-                    <span className="font-mono text-[11px] text-slate">{skill.level}</span>
-                  </div>
-                </div>
+      {/* Interactive Tech Wall Grid */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
+        {displaySkills.map((skill, index) => {
+          const Icon = iconMap[skill.iconName] || Code2;
+          return (
+            <div
+              key={`${skill.name}-${index}`}
+              className="group relative flex flex-col items-center justify-center p-6 rounded-2xl border border-dark-border bg-dark-card/60 backdrop-blur-sm hover:border-accent-sky/50 hover:bg-dark-surface transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-center"
+              data-cursor={skill.name}
+            >
+              <div className="size-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:text-accent-sky group-hover:border-accent-sky/30 group-hover:scale-110 transition-all duration-300 mb-3">
+                <Icon className="size-6" />
               </div>
-            );
-          })}
-        </div>
-      ))}
+
+              <h3 className="font-display text-sm font-semibold text-white group-hover:text-accent-sky transition-colors">
+                {skill.name}
+              </h3>
+
+              <span className="font-mono text-[11px] text-text-dim mt-1">
+                {skill.level}
+              </span>
+            </div>
+          );
+        })}
+      </div>
     </section>
   );
 }

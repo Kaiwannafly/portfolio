@@ -1,106 +1,124 @@
+﻿'use client';
+
 import React from 'react';
 import { EDUCATION_DATA } from '@/data/portfolioData';
-import { GraduationCap, Award, MapPin, Calendar, CheckCircle } from 'lucide-react';
+import { GraduationCap, Award, MapPin, Calendar, CheckCircle2 } from 'lucide-react';
 
 export default function Education() {
   return (
-    <section id="education" className="py-20 px-6 max-w-6xl mx-auto border-t border-mist">
-      <div className="space-y-3 mb-12">
-        <div className="inline-flex items-center gap-2 text-xs font-mono text-slate uppercase tracking-caps">
-          <span className="size-1.5 rounded-full bg-ember"></span>
+    <section id="education" className="py-24 px-6 sm:px-12 max-w-7xl mx-auto border-t border-dark-border">
+      {/* Section Header */}
+      <div className="text-center space-y-4 mb-16">
+        <h2 className="font-display text-4xl sm:text-6xl md:text-7xl font-bold tracking-tight text-white hover:text-stroke-light transition-all duration-300">
           Academic Honors
-        </div>
-        <h2 className="font-display text-3xl sm:text-4xl font-normal text-graphite tracking-display">
-          Education &amp; Credentials
         </h2>
-        <p className="text-steel text-sm sm:text-base max-w-xl">
-          Academic foundations across Australia and the United States, marked by high distinction performance in software engineering.
+        <p className="font-mono text-xs sm:text-sm uppercase tracking-caps text-text-muted">
+          Education &amp; Distinction Credentials
         </p>
       </div>
 
-      <div className="space-y-8">
+      <div className="space-y-8 max-w-5xl mx-auto">
         {EDUCATION_DATA.map((item, idx) => (
           <div
             key={idx}
-            className="bg-canvas-white border border-mist rounded-card p-6 sm:p-8 space-y-6 transition-all hover:border-graphite/30 hover:shadow-card"
+            className="rounded-2xl border border-dark-border bg-dark-card/80 backdrop-blur-sm p-7 sm:p-9 space-y-6 hover:border-white/30 transition-all duration-300"
+            data-cursor="Academic<br>Honors"
           >
             {/* Header */}
             <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
-              <div className="space-y-1">
-                <div className="flex items-center gap-2">
-                  <GraduationCap className="size-5 text-ember" />
-                  <h3 className="font-display text-xl sm:text-2xl font-medium text-graphite">
-                    {item.institution}
-                  </h3>
+              <div className="space-y-1.5">
+                <div className="flex items-center gap-3">
+                  <div className="size-10 rounded-xl bg-accent-blue/20 border border-accent-blue/30 flex items-center justify-center text-accent-sky shrink-0">
+                    <GraduationCap className="size-5" />
+                  </div>
+                  <div>
+                    <h3 className="font-display text-xl sm:text-2xl font-bold text-white">
+                      {item.institution}
+                    </h3>
+                    <p className="text-sm font-medium text-text-muted">
+                      {item.degree} {item.major ? `• Major in ${item.major}` : ''}
+                    </p>
+                  </div>
                 </div>
-                <p className="text-sm font-medium text-steel">
-                  {item.degree} {item.major ? `• Major in ${item.major}` : ''}
-                </p>
               </div>
 
-              <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-slate">
+              <div className="flex flex-wrap items-center gap-3 text-xs font-mono text-text-dim">
                 <span className="flex items-center gap-1">
-                  <MapPin className="size-3.5 text-slate" />
+                  <MapPin className="size-3 text-accent-sky" />
                   {item.location}
                 </span>
                 <span>•</span>
                 <span className="flex items-center gap-1">
-                  <Calendar className="size-3.5 text-slate" />
+                  <Calendar className="size-3" />
                   {item.period}
                 </span>
               </div>
             </div>
 
-            {/* Academic Standing Banner (if present) */}
+            {/* Academic Standing Pill Banner for UTS */}
             {item.wam && (
-              <div className="flex flex-wrap items-center gap-4 p-4 bg-ivory/70 border border-brass/20 rounded-md">
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 p-5 rounded-xl bg-white/5 border border-white/10">
                 <div>
-                  <span className="font-mono text-[11px] uppercase tracking-caps text-slate block">Academic WAM</span>
-                  <span className="font-display text-xl font-medium text-graphite">{item.wam}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-caps text-text-dim block">
+                    Academic WAM
+                  </span>
+                  <span className="font-display text-2xl font-bold text-white">
+                    {item.wam}
+                  </span>
+                  <span className="text-xs text-text-muted block">High Distinction Average</span>
                 </div>
-                <div className="h-8 w-px bg-brass/20"></div>
+
                 <div>
-                  <span className="font-mono text-[11px] uppercase tracking-caps text-slate block">GPA</span>
-                  <span className="font-display text-xl font-medium text-graphite">{item.gpa}</span>
+                  <span className="font-mono text-[10px] uppercase tracking-caps text-text-dim block">
+                    Cumulative GPA
+                  </span>
+                  <span className="font-display text-2xl font-bold text-white">
+                    {item.gpa}
+                  </span>
+                  <span className="text-xs text-text-muted block">Out of 7.00 scale</span>
                 </div>
-                <div className="h-8 w-px bg-brass/20"></div>
+
                 <div>
-                  <span className="font-mono text-[11px] uppercase tracking-caps text-slate block">Standing</span>
-                  <span className="text-sm font-medium text-brass flex items-center gap-1 mt-0.5">
-                    <Award className="size-4" />
+                  <span className="font-mono text-[10px] uppercase tracking-caps text-text-dim block">
+                    Faculty Standing
+                  </span>
+                  <span className="font-display text-base font-semibold text-amber-300 flex items-center gap-1.5 mt-1">
+                    <Award className="size-4 text-amber-400" />
                     {item.honors}
                   </span>
                 </div>
               </div>
             )}
 
-            <p className="text-steel text-sm leading-relaxed">
+            <p className="font-sans text-sm sm:text-base text-text-muted leading-relaxed">
               {item.description}
             </p>
 
-            {/* Key Coursework Grid (for UTS) */}
+            {/* Coursework High Distinction Badges */}
             {item.coursework && (
               <div className="space-y-3 pt-2">
-                <h4 className="font-mono text-xs uppercase tracking-caps text-slate font-medium">
-                  Notable Coursework Results
+                <h4 className="font-mono text-xs uppercase tracking-caps text-text-dim font-medium">
+                  Coursework Performance
                 </h4>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {item.coursework.map((course) => (
                     <div
                       key={course.code}
-                      className="p-2.5 bg-fog/70 border border-mist/80 rounded-md flex items-center justify-between text-xs"
+                      className="p-3 rounded-xl bg-dark-surface/90 border border-dark-border/80 flex items-center justify-between text-xs"
                     >
-                      <div>
-                        <span className="font-mono text-[10px] text-slate block">
+                      <div className="space-y-0.5 pr-2">
+                        <span className="font-mono text-[10px] text-accent-sky block">
                           {course.code}
                         </span>
-                        <span className="font-medium text-graphite">{course.name}</span>
+                        <span className="font-medium text-white/90 leading-tight block">
+                          {course.name}
+                        </span>
                       </div>
                       <span
-                        className={`font-mono font-medium px-2 py-0.5 rounded text-[11px] ${
+                        className={`font-mono font-bold px-2.5 py-1 rounded-md text-xs shrink-0 ${
                           course.mark >= 85
-                            ? 'bg-ember/10 text-ember'
-                            : 'bg-ash text-steel'
+                            ? 'bg-accent-blue/30 text-accent-sky border border-accent-blue/40'
+                            : 'bg-white/10 text-white border border-white/15'
                         }`}
                       >
                         {course.mark} / {course.grade.includes('High') ? 'HD' : 'D'}
