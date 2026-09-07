@@ -325,7 +325,7 @@ export const SKILLS_DATA = SKILL_CATEGORIES;
 export const EDUCATION_DATA: EducationItem[] = [
   {
     institution: "University of Technology Sydney (UTS)",
-    location: "Hanoi, Vietnam",
+    location: "Sydney, Australia",
     degree: "Bachelor of Information Technology with Credit (BIT)",
     major: "Enterprise Systems Development",
     period: "2021 – 2025 (Conferred July 2025)",
@@ -387,7 +387,7 @@ export const TIMELINE_DATA: TimelineItem[] = [
     period: "21-25",
     role: "Bachelor of Information Technology with Credit (WAM 80.06)",
     organization: "University of Technology Sydney (UTS)",
-    location: "Hanoi, Vietnam",
+    location: "Sydney, Australia",
     current: false,
     type: "education",
   },
