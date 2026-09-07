@@ -33,9 +33,16 @@ export interface EducationItem {
   coursework?: Coursework[];
 }
 
+export interface SkillItem {
+  name: string;
+  level: string;
+  iconName: string;
+  subtitle?: string;
+}
+
 export interface SkillCategory {
   title: string;
-  skills: { name: string; level: string; iconName: string }[];
+  skills: SkillItem[];
 }
 
 export interface TimelineItem {
@@ -214,6 +221,15 @@ export const PROJECTS: Project[] = [
     metrics: "Media Production Internship",
     featured: false,
   },
+];
+
+export const CORE_SKILLS: SkillItem[] = [
+  { name: "React & Next.js", level: "Advanced", iconName: "Atom", subtitle: "Frontend & UI Architecture" },
+  { name: "TypeScript & Node.js", level: "Advanced", iconName: "Code2", subtitle: "Full-Stack Web Engineering" },
+  { name: "C# (.NET & WPF)", level: "Advanced", iconName: "Layers", subtitle: "Enterprise Systems & Desktop" },
+  { name: "Golang (Go)", level: "Proficient", iconName: "Zap", subtitle: "High-Concurrency REST APIs" },
+  { name: "PostgreSQL & SQL Server", level: "Advanced", iconName: "Database", subtitle: "Relational Modeling & ACID" },
+  { name: "Docker & CI/CD", level: "Proficient", iconName: "Boxes", subtitle: "Microservices & Deployment" },
 ];
 
 export const SKILL_CATEGORIES: SkillCategory[] = [

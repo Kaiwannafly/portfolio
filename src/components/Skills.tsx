@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import { SKILL_CATEGORIES } from '@/data/portfolioData';
+import { SKILL_CATEGORIES, CORE_SKILLS } from '@/data/portfolioData';
 import {
   FileCode,
   Code2,
@@ -48,10 +48,9 @@ const iconMap: Record<string, LucideIcon> = {
 export default function Skills() {
   const [activeCategory, setActiveCategory] = useState<string>('All');
 
-  const allSkills = SKILL_CATEGORIES.flatMap((c) => c.skills);
   const displaySkills =
     activeCategory === 'All'
-      ? allSkills
+      ? CORE_SKILLS
       : SKILL_CATEGORIES.find((c) => c.title === activeCategory)?.skills || [];
 
   return (
@@ -76,7 +75,7 @@ export default function Skills() {
             }`}
             data-cursor="Toolbox"
           >
-            All Skills
+            All Skills (Core)
           </button>
           {SKILL_CATEGORIES.map((cat) => (
             <button
@@ -96,26 +95,50 @@ export default function Skills() {
       </div>
 
       {/* Interactive Tech Wall Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 sm:gap-6">
+      <div
+        className={`grid gap-4 sm:gap-6 mx-auto ${
+          activeCategory === 'All'
+            ? 'grid-cols-2 sm:grid-cols-2 md:grid-cols-3 max-w-5xl'
+            : 'grid-cols-2 sm:grid-cols-3 md:grid-cols-4 max-w-6xl'
+        }`}
+      >
         {displaySkills.map((skill, index) => {
           const Icon = iconMap[skill.iconName] || Code2;
           return (
             <div
               key={`${skill.name}-${index}`}
-              className="group relative flex flex-col items-center justify-center p-6 rounded-2xl border border-dark-border bg-dark-card/60 backdrop-blur-sm hover:border-accent-sky/50 hover:bg-dark-surface transition-all duration-300 hover:-translate-y-1 hover:shadow-xl text-center"
+              className="group relative flex flex-col items-center justify-center p-6 sm:p-7 rounded-2xl border border-dark-border bg-dark-card/60 backdrop-blur-sm overflow-hidden hover:border-accent-sky/50 hover:bg-dark-surface transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl text-center"
               data-cursor={skill.name}
             >
-              <div className="size-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:text-accent-sky group-hover:border-accent-sky/30 group-hover:scale-110 transition-all duration-300 mb-3">
+              {/* Top Hairline Highlight */}
+              <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              {/* Ambient Hover Glow */}
+              <div className="absolute -top-12 -right-12 size-32 bg-accent-sky/10 rounded-full blur-2xl pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+
+              {/* Icon Container */}
+              <div className="size-13 sm:size-14 rounded-2xl bg-white/[0.04] border border-white/10 flex items-center justify-center text-white group-hover:text-accent-sky group-hover:border-accent-sky/40 group-hover:bg-accent-blue/10 group-hover:scale-110 transition-all duration-300 mb-3.5">
                 <Icon className="size-6" />
               </div>
 
-              <h3 className="font-display text-sm font-semibold text-white group-hover:text-accent-sky transition-colors">
+              {/* Skill Title */}
+              <h3 className="font-display text-sm sm:text-base font-semibold text-white group-hover:text-accent-sky transition-colors">
                 {skill.name}
               </h3>
 
-              <span className="font-mono text-[11px] text-text-dim mt-1">
-                {skill.level}
-              </span>
+              {skill.subtitle && (
+                <span className="font-sans text-xs text-text-muted mt-1 leading-snug">
+                  {skill.subtitle}
+                </span>
+              )}
+
+              {/* Crisp Level Micro-Pill */}
+              <div className="mt-2.5 inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/[0.04] border border-white/[0.1] group-hover:border-accent-sky/30 group-hover:bg-accent-sky/10 transition-all">
+                <span className="size-1.5 rounded-full bg-accent-sky/70 group-hover:bg-accent-sky transition-all" />
+                <span className="font-mono text-[10px] sm:text-[11px] uppercase tracking-wider text-text-dim group-hover:text-white transition-colors font-medium">
+                  {skill.level}
+                </span>
+              </div>
             </div>
           );
         })}
